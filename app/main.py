@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from fastapi.response import JSONResponse
+from fastapi.responses import JSONResponse
 from sqlalchemy import create_engine, Column,Integer,String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 
 app = FastAPI()
 
-DATABASE_URL = "postgresql://postgres:password@db:5432/tesdb"
+DATABASE_URL = "postgresql://postgres:password@db:5432/testdb"
 
 Base = declarative_base()
 
